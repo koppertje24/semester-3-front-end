@@ -1,7 +1,5 @@
-import { Component } from "react";
-import { render } from 'react-dom';
+import React, { Component } from "react";
 
-import CharacterSheetData from '../BackendConaction/CharaterSheetData.js';
 import fetchDataById from "../BackendConaction/CharaterSheetData.js";
 
 
@@ -63,3 +61,5 @@ class CharacterSheet extends Component{
 }
 
 export default CharacterSheet;
+
+

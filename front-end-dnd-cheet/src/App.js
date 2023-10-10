@@ -1,14 +1,18 @@
 import './App.css';
 import CharacterSheet from './Components/Character/CharacterSheet.js'
 
+import CharacterSheetForm from './Components/Character/CharacterSheetForm.js'
+
 
 
 function App() {
   return (
     <div className="Layout">
-        <p>
-          <CharacterSheet />
-        </p>
+      
+      <CharacterSheetForm />
+      
+      <CharacterSheet />
+      
     </div>
   );
 }
