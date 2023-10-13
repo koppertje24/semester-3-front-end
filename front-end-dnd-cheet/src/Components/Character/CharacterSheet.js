@@ -1,7 +1,28 @@
 import React, { Component } from "react";
+import '../../App.css'; 
 
-import fetchDataById from "../BackendConaction/CharaterSheetData.js";
+import fetchDataById from "../BackendConaction/GetUserData.js";
 
+const PlayerCharacterTile = ({ character }) => (
+    <button className="character-tile">
+      Name: {character.characterName}
+    </button>
+  );
+
+  const PlayerCharacterList = ({ data }) => {
+    const { playerCharacters, playerName } = data;
+    return (
+      <div>
+        <h2>Player Name: {playerName}</h2>
+        <h3>Player Characters:</h3>
+            <div className="character-tile-container">
+            {playerCharacters.map((character, index) => (
+                <PlayerCharacterTile key={index} character={character} />
+            ))}
+            </div>
+      </div>
+    );
+  };
 
 class CharacterSheet extends Component{
     constructor(props){
@@ -33,6 +54,8 @@ class CharacterSheet extends Component{
             });
         }
     }
+
+    
     
 
     render(){
@@ -48,13 +71,8 @@ class CharacterSheet extends Component{
 
         return (
             <div>
-                {/* Use the 'data' state in your component */}
-                {data && (
-                    <div>
-                        <h2>Data</h2>
-                        <pre>{JSON.stringify(data, null, 2)}</pre>
-                    </div>
-                )}
+            <h1>Player Information</h1>
+            <PlayerCharacterList data={data} />
             </div>
         );
     }

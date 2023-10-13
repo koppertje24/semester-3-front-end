@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
+import SetCharacterData from "../BackendConaction/SetCharacterData.js";
 
 class CharacterSheetForm extends Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class CharacterSheetForm extends Component {
         this.state = {
             id: 1,
             characterName: '',
-            sheet_id: 1,
+            sheet_id: 0,
         };
     }
 
@@ -18,40 +19,8 @@ class CharacterSheetForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-
-        const { id } = this.state; // ID of the character sheet (for update)
-        const { characterName } = this.state;
-        const { sheet_id } = this.state;
-
-        const characterSheetData = {
-            characterName,
-        };
-
-        console.log('characterSheetData:', characterSheetData);
-        console.log('sheet id:', sheet_id);
-        console.log('CharacterName:', characterName);
-
-        const apiUrl = id ? `http://localhost:8080/players/put/${id}/Character/${sheet_id}` : 'http://localhost:8080/characters/post';
-
-        console.log('apiUrl:', apiUrl);
-
-        // Determine the HTTP method (POST for create, PUT for update)
-        const method = id ? 'PUT' : 'POST';
-
-        axios({
-            method: method,
-            url: apiUrl,
-            data: characterSheetData,
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((response) => {
-                console.log('Character sheet saved or updated:', response.data);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
+        SetCharacterData(event, this.state);
+        // window.location.reload();
     };
 
     render() {

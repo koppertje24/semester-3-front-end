@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.character-tile {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #3498db;
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.character-tile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
