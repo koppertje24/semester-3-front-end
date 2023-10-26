@@ -1,34 +1,48 @@
+import { useParams, useNavigate } from 'react-router-dom';
 import React, { Component } from "react";
-import '../../App.css'; 
 
 import fetchDataById from "../BackendConaction/GetUserData.js";
 
-const PlayerCharacterTile = ({ character }) => (
-    <button className="character-tile">
-      Name: {character.characterName}
-    </button>
-  );
 
-  const PlayerCharacterList = ({ data }) => {
+
+const PlayerCharacterMain = ({ data }) => {
+    const navigate = useNavigate();
+    const { id } = useParams();
     const { playerCharacters, playerName } = data;
-    return (
-      <div>
-        <h2>Player Name: {playerName}</h2>
-        <h3>Player Characters:</h3>
-            <div className="character-tile-container">
-            {playerCharacters.map((character, index) => (
-                <PlayerCharacterTile key={index} character={character} />
-            ))}
+
+    if (id >= 0 && id < playerCharacters.length) {
+        const specificCharacter = playerCharacters[id];
+
+        return (
+            <div>
+                Character Sheet for ID: {id}
+            <h2>Player Name: {playerName}</h2>
+            
+            <PlayerCharacterstructure Character={specificCharacter} />
+
             </div>
-      </div>
-    );
-  };
+        );
+    }
+    else{
+        navigate('/');
+        return(<p>Id out of range</p>);
+    }
+
+    
+};
+
+
+const PlayerCharacterstructure = ({Character}) => {
+    return(
+        <h3>{Character.characterName} </h3>
+    )
+}
 
 class CharacterSheet extends Component{
     constructor(props){
         super(props);
         this.props = props;
-
+        
         this.state = {
             data: null,
             loading: true,
@@ -55,29 +69,24 @@ class CharacterSheet extends Component{
         }
     }
 
-    
-    
-
-    render(){
+    render() {
         const { data, loading, error } = this.state;
 
-        if (loading) {
-            return <p>Loading...</p>;
-        }
+            if (loading) {
+                return <p>Loading...</p>;
+            }
 
-        if (error) {
-            return <p>Error: {error}</p>;
-        }
-
-        return (
+            if (error) {
+                return <p>Error: {error}</p>;
+            }
+            
+            return (
             <div>
-            <h1>Player Information</h1>
-            <PlayerCharacterList data={data} />
+            <PlayerCharacterMain data={data} />
             </div>
-        );
+            );
+        
     }
 }
 
 export default CharacterSheet;
-
-
