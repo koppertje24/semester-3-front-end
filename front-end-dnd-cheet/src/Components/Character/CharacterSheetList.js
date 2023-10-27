@@ -15,7 +15,7 @@ const PlayerCharacterTile = ({ id, character }) => {
 
     return (
         <button className="character-tile" onClick={handleButtonClick}>
-            Name: {character.characterName}
+            Name: {character.characterName} Class: {character.characterClass}
         </button>
     );
 };
@@ -48,7 +48,7 @@ class CharacterSheetList extends Component{
     }
     
     async componentDidMount() {
-        const characterId = 1; // Replace with the actual ID you want to fetch
+        const characterId = 1; // Replace with the actual ID when it is there
 
         try {
             const responseData = await fetchDataById(characterId);

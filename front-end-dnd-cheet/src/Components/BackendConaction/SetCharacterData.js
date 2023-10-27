@@ -2,18 +2,21 @@ import axios from 'axios';
 
 async function SetCharacterData(event, state) {
 
-    const { id } = state; // ID of the character sheet (for update)
+    const { id } = state; // ID for update
     const { characterName } = state;
+    const { characterClass } = state;
     const { sheet_id: userId } = state;
 
     const characterSheetData = {
         characterName,
         userId,
+        characterClass,
     };
 
     console.log('player id:', id);
     console.log('sheet id:', userId);
     console.log('CharacterName:', characterName);
+    console.log('CharacterClass:', characterClass);
 
     const apiUrl = userId ? `http://localhost:8080/players/put/${id}/Character/${userId}` : `http://localhost:8080/players/post/${id}/Character`;
 

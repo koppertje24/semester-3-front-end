@@ -3,8 +3,6 @@ import React, { Component } from "react";
 
 import fetchDataById from "../BackendConaction/GetUserData.js";
 
-
-
 const PlayerCharacterMain = ({ data }) => {
     const navigate = useNavigate();
     const { id } = useParams();
@@ -27,14 +25,16 @@ const PlayerCharacterMain = ({ data }) => {
         navigate('/');
         return(<p>Id out of range</p>);
     }
-
-    
 };
 
 
 const PlayerCharacterstructure = ({Character}) => {
     return(
-        <h3>{Character.characterName} </h3>
+        <div>
+            <h3>{Character.characterName} </h3>
+
+            {Character.characterClass}
+        </div>
     )
 }
 
