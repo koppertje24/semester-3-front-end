@@ -1,0 +1,29 @@
+portfolie update
+
+
+in een paragraaf opschrijven waarom dingen in elkaar.
+
+
+
+LU1:
+schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
+
+leg meer uit hoe het orm word gebruikt word.
+
+axios uitzoeken.
+
+ORM neerzetten.
+
+aangeven dat er crud in zit.
+
+LU2:
+
+voeg steekworden toe aan project.
+
+
+Sonar cload tool
+
+LU4:
+
+een release plan maken.
+
