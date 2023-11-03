@@ -1,44 +1,10 @@
-import { useParams, useNavigate } from 'react-router-dom';
 import React, { Component } from "react";
 
-import fetchDataById from "../BackendConaction/GetUserData.js";
 
-const PlayerCharacterMain = ({ data }) => {
-    const navigate = useNavigate();
-    const { id } = useParams();
-    const { playerCharacters, playerName } = data;
+import SinglePlayerCharacter from './SingleCharacterSheet.js'
+import fetchDataById from "../../BackendConaction/GetUserData.js";
 
-    if (id >= 0 && id < playerCharacters.length) {
-        const specificCharacter = playerCharacters[id];
-
-        return (
-            <div>
-                Character Sheet for ID: {id}
-            <h2>Player Name: {playerName}</h2>
-            
-            <PlayerCharacterstructure Character={specificCharacter} />
-
-            </div>
-        );
-    }
-    else{
-        navigate('/');
-        return(<p>Id out of range</p>);
-    }
-};
-
-
-const PlayerCharacterstructure = ({Character}) => {
-    return(
-        <div>
-            <h3>{Character.characterName} </h3>
-
-            {Character.characterClass}
-        </div>
-    )
-}
-
-class CharacterSheet extends Component{
+class SingleCharacterSheetLoader extends Component{
     constructor(props){
         super(props);
         this.props = props;
@@ -82,11 +48,11 @@ class CharacterSheet extends Component{
             
             return (
             <div>
-            <PlayerCharacterMain data={data} />
+            <SinglePlayerCharacter data={data} />
             </div>
             );
         
     }
 }
 
-export default CharacterSheet;
+export default SingleCharacterSheetLoader;
