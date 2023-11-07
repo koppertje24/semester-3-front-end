@@ -3,6 +3,7 @@ run_tests:
 
     before_script:
         - npm install axios
+        - npm install
 
     script: 
         - npm test
