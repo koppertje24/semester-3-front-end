@@ -2,7 +2,8 @@ run_tests:
     image: node:16.16.0
 
     before_script:
-        - npm install axios
+        - npm install
+    
 
     script: 
         - npm test
