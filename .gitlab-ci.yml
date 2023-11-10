@@ -1,9 +1,33 @@
-run_tests:
-    image: node:16.16.0
+image: node:16.16.0
+
+stages:
+    - build
+    - test
+    - deploy
+
+build:
+    stage: build
 
     before_script:
         - npm install
-    
 
-    script: 
+    script:
+        - npm build
+
+test:
+    stage: test
+
+    before_script:
+        - npm install
+
+    script:
         - npm test
+
+deploy:
+    stage: deploy
+
+    script:
+        - echo "deploy script here"
+
+    only:
+        - master
