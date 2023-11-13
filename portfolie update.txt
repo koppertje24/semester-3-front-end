@@ -20,6 +20,8 @@ LU2:
 
 voeg steekworden toe aan project.
 
+meer dingen hebben te maken met software quality. 
+
 
 Sonar cload tool
 
