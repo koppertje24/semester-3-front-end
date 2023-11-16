@@ -8,24 +8,24 @@ ook neerzetten of het al gecontroleerd is.
 LU1:
 schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
 
-leg meer uit hoe het orm word gebruikt word.
+[X] leg meer uit hoe het orm word gebruikt word.
 
-axios uitzoeken.
+[ ] axios uitzoeken.
 
-ORM neerzetten.
+[X] ORM neerzetten.
 
-aangeven dat er crud in zit.
+[ ] aangeven dat er crud in zit.
 
 LU2:
 
-voeg steekworden toe aan project.
+[ ] voeg steekworden toe aan project.
 
-meer dingen hebben te maken met software quality. 
+[ ] meer dingen hebben te maken met software quality. 
 
 
-Sonar cload tool
+[ ] Sonar cload tool
 
 LU4:
 
-een release plan maken.
+[ ] een release plan maken.
 
