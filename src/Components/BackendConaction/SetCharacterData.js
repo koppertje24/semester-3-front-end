@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-async function SetCharacterData(event, state) {
+async function SetCharacterData(event, state, AcountId, SheetId) {
 
     const { id } = state; // ID for update
     const { characterName } = state;
     const { characterClass } = state;
-    const { sheet_id: userId } = state;
+    const { playerId: userId } = state;
 
     const abilityScores  = [12, 15, 14, 17, 8, 20];
     const skillProficiency = [true, true, false];
@@ -20,8 +20,9 @@ async function SetCharacterData(event, state) {
         userId,
     };
 
-    console.log('player id:', id);
-    console.log('sheet id:', userId);
+    console.log('playerId:', userId);
+    console.log('SheetId:', SheetId);
+    console.log('id:', id);
     console.log('CharacterName:', characterName);
     console.log('CharacterClass:', characterClass);
 
@@ -29,7 +30,7 @@ async function SetCharacterData(event, state) {
     console.log('SkillProficiency:', skillProficiency);
     console.log('CharacterLevel:', characterLevel);
 
-    const apiUrl = userId ? `http://localhost:8080/players/put/${id}/Character/${userId}` : `http://localhost:8080/players/post/${id}/Character`;
+    const apiUrl = SheetId ? `http://localhost:8080/players/put/${AcountId}/Character/${SheetId}` : `http://localhost:8080/players/post/${AcountId}/Character`;
 
     console.log('apiUrl:', apiUrl);
 

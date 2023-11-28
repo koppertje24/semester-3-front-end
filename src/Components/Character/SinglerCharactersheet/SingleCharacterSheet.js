@@ -1,5 +1,11 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import React from "react";
+import React, { useState } from "react";
+import SetCharacterData from '../../BackendConaction/SetCharacterData';
+import { getCharacterClassByName } from '../../Information/CharacterClassEnum';
+
+
+
+
 
 function SinglePlayerCharacter({ data }){
     const navigate = useNavigate();
@@ -11,10 +17,9 @@ function SinglePlayerCharacter({ data }){
 
         return (
             <div>
-                Character Sheet for ID: {id}
             <h2>Player Name: {playerName}</h2>
             
-            <PlayerCharacterstructure Character={specificCharacter} />
+            <PlayerCharacterstructure MainCharacter={specificCharacter} />
 
             </div>
         );
@@ -26,12 +31,33 @@ function SinglePlayerCharacter({ data }){
 };
 
 
-function PlayerCharacterstructure({Character}){
+
+function PlayerCharacterstructure({MainCharacter}){
+    const [character, setCharacter] = useState(MainCharacter)
+    const { id } = useParams();
+    const [BlurCharacter, setBlurCharacter] = useState(MainCharacter)
+
+    const handleBlur = () => {
+        console.log('Full sheet', BlurCharacter );
+        const classNumber = getCharacterClassByName(character.characterClass);
+        console.log('Class number ', classNumber);
+        console.log('sheet number ', id);
+        setBlurCharacter({...character, characterClass: classNumber});
+        setTimeout(() => {
+            SetCharacterData(null, character, 1, id);
+        }, 1000);
+      };
+
+   
+    const handleChange = (event) => {
+        setCharacter({ ...character, characterName: event.target.value });
+      };
+
     return(
         <div>
-            <h3>{Character.characterName} </h3>
+            <h3> <input type="text" value={character.characterName} id="message" name="message" onChange={handleChange} onBlur={handleBlur} /> {BlurCharacter.characterName} </h3>
 
-            {Character.characterClass}
+            {MainCharacter.characterClass}
         </div>
     )
 }

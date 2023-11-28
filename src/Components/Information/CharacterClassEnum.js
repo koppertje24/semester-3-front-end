@@ -15,6 +15,13 @@ export const EnumCharacterClass = {
     Artificer: 13,
 };
 
+export const getCharacterClassByName = (className) => {
+    const classKey = Object.keys(EnumCharacterClass).find(
+        (key) => key.toLowerCase() === className.toLowerCase()
+      );
+    return EnumCharacterClass[classKey]|| null;
+  };
+
 export const CharacterClassSelect = ({className, classValue, classOnChange}) => {
     return(
         <select id={className} name={className} value={classValue} onChange={classOnChange}>

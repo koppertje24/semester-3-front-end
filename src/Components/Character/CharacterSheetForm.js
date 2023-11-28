@@ -6,9 +6,8 @@ import { CharacterClassSelect } from "../Information/CharacterClassEnum";
 import SetCharacterData from "../BackendConaction/SetCharacterData.js";
 
 const CharacterSheetForm = () => {
-    const [id] = useState(1);
     const [characterName, setCharacterName] = useState('');
-    const [sheet_id, setSheetId] = useState(0);
+    const [userId, setUserId] = useState(0);
     const [characterClass, setcharacterClass] = useState(0);
     const navigate = useNavigate();
 
@@ -16,8 +15,8 @@ const CharacterSheetForm = () => {
         const { name, value } = event.target;
         if (name === 'characterName') {
             setCharacterName(value);
-        } else if (name === 'sheet_id') {
-            setSheetId(value);
+        } else if (name === 'userId') {
+            setUserId(value);
         } else if (name === 'characterClass') {
             setcharacterClass(value);
         }
@@ -25,7 +24,7 @@ const CharacterSheetForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        SetCharacterData(event, { id: id, characterName, sheet_id, characterClass });
+        SetCharacterData(event, { characterName, userId, characterClass }, 1);
         navigate('/');
     };
 
