@@ -4,6 +4,10 @@ portfolie update
 in een paragraaf opschrijven waarom dingen in elkaar/er staat.
 ook neerzetten of het al gecontroleerd is.
 
+vraag docenten voor feedback op mijn leerevidance.
+
+opschrijven over debuggen.
+
 
 LU1:
 schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
@@ -16,16 +20,23 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 [ ] aangeven dat er crud in zit.
 
+[ ] complete delete
+
 LU2:
 
 [ ] voeg steekworden toe aan project.
 
-[ ] meer dingen hebben te maken met software quality. 
+[ ] Schrijf een testplan.
 
+[ ] meer dingen hebben te maken met software quality. 
 
 [ ] Sonar cload tool
 
 LU4:
 
-[ ] een release plan maken.
+[ ] een extra front/back-end toevoegen met een pipeline.
+
+[ ] release plan doc updaten + verbeteren.
+
+[X] een release plan maken.
 
