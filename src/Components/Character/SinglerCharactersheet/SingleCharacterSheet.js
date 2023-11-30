@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
-import SetCharacterData from '../../BackendConaction/SetCharacterData';
-import { getCharacterClassByName } from '../../Information/CharacterClassEnum';
+import { CharacterClassSelect, getCharacterClassIdByName } from '../../Information/CharacterClassEnum';
+import SetCharacterData from '../../BackendConaction/SetCharacterData.ts';
 
 
 
@@ -10,14 +10,14 @@ import { getCharacterClassByName } from '../../Information/CharacterClassEnum';
 function SinglePlayerCharacter({ data }){
     const navigate = useNavigate();
     const { id } = useParams();
-    const { playerCharacters, playerName } = data;
+    const { CharacterSheets, PlayerName } = data;
 
-    if (id >= 0 && id < playerCharacters.length) {
-        const specificCharacter = playerCharacters[id];
+    if (id >= 0 && id < CharacterSheets.length) {
+        const specificCharacter = CharacterSheets[id];
 
         return (
             <div>
-            <h2>Player Name: {playerName}</h2>
+            <h2>Player Name: {PlayerName}</h2>
             
             <PlayerCharacterstructure MainCharacter={specificCharacter} />
 
@@ -33,31 +33,40 @@ function SinglePlayerCharacter({ data }){
 
 
 function PlayerCharacterstructure({MainCharacter}){
-    const [character, setCharacter] = useState(MainCharacter)
+    const [character, setCharacter] = useState({...MainCharacter, CharacterClass: getCharacterClassIdByName(MainCharacter.CharacterClass)})
     const { id } = useParams();
-    const [BlurCharacter, setBlurCharacter] = useState(MainCharacter)
+    const [BlurCharacter, setBlurCharacter] = useState(character)
+
+
+    
 
     const handleBlur = () => {
-        console.log('Full sheet', BlurCharacter );
-        const classNumber = getCharacterClassByName(character.characterClass);
-        console.log('Class number ', classNumber);
+        console.log('Full sheet', character );
         console.log('sheet number ', id);
-        setBlurCharacter({...character, characterClass: classNumber});
+        setBlurCharacter(character);
         setTimeout(() => {
-            SetCharacterData(null, character, 1, id);
+            SetCharacterData(null, BlurCharacter, 1, id);
         }, 1000);
       };
 
    
     const handleChange = (event) => {
-        setCharacter({ ...character, characterName: event.target.value });
+        const { name, value } = event.target;
+        
+        if (name === 'characterName') {
+            setCharacter({ ...character, CharacterName: value });
+        } else if(name === 'characterClass' )
+        {
+            setCharacter({ ...character, CharacterClass: value });
+        }
       };
 
     return(
         <div>
-            <h3> <input type="text" value={character.characterName} id="message" name="message" onChange={handleChange} onBlur={handleBlur} /> {BlurCharacter.characterName} </h3>
+            <h3> <input type="text" value={character.CharacterName} id="message" name="characterName" onChange={handleChange} onBlur={handleBlur} /> {BlurCharacter.CharacterName} </h3>
 
-            {MainCharacter.characterClass}
+            <CharacterClassSelect className="characterClass" classValue={character.CharacterClass} classOnChange={handleChange}/>
+            {MainCharacter.CharacterClass}
         </div>
     )
 }

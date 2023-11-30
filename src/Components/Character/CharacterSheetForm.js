@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 import { CharacterClassSelect } from "../Information/CharacterClassEnum";
 
-import SetCharacterData from "../BackendConaction/SetCharacterData.js";
+import { CharacterSheet } from '../DataStruckture/CharacterSheet';
+import { SetCharacterData } from '../BackendConaction/SetCharacterData.ts';
 
 const CharacterSheetForm = () => {
     const [characterName, setCharacterName] = useState('');
@@ -24,7 +25,7 @@ const CharacterSheetForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        SetCharacterData(event, { characterName, userId, characterClass }, 1);
+        SetCharacterData(event, new CharacterSheet({CharacterName: characterName, playerId: userId, CharacterClass: characterClass }), 1);
         navigate('/');
     };
 

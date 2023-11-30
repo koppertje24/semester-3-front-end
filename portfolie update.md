@@ -1,42 +1,45 @@
-portfolie update
+# portfolie update
 
 
-in een paragraaf opschrijven waarom dingen in elkaar/er staat.
-ook neerzetten of het al gecontroleerd is.
+- [ ] in een paragraaf opschrijven waarom dingen in elkaar/er staat.
 
-vraag docenten voor feedback op mijn leerevidance.
+- [ ] neerzetten of het al gecontroleerd is.
 
-opschrijven over debuggen.
+- [ ] vraag docenten voor feedback op mijn leerevidance.
+
+- [ ] opschrijven over debuggen.
+
+- [ ] repair the update/create, you broke it.
 
 
-LU1:
+### LU1:
 schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
 
-[X] leg meer uit hoe het orm word gebruikt word.
+- [x] leg meer uit hoe het orm word gebruikt word.
 
-[ ] axios uitzoeken.
+- [ ] axios uitzoeken.
 
-[X] ORM neerzetten.
+- [x] ORM neerzetten.
 
-[ ] aangeven dat er crud in zit.
+- [ ] aangeven dat er crud in zit.
 
-[ ] complete delete
+- [ ] complete delete of character sheet.
 
-LU2:
+### LU2:
 
-[ ] voeg steekworden toe aan project.
+- [ ] voeg steekworden toe aan project.
 
-[ ] Schrijf een testplan.
+- [ ] Schrijf een testplan.
 
-[ ] meer dingen hebben te maken met software quality. 
+- [ ] meer dingen hebben te maken met software quality.
 
-[ ] Sonar cload tool
+- [ ] Sonar cload tool
 
-LU4:
+### LU4:
 
-[ ] een extra front/back-end toevoegen met een pipeline.
+- [ ] een extra front/back-end toevoegen met een pipeline.
 
-[ ] release plan doc updaten + verbeteren.
+- [ ] release plan doc updaten + verbeteren.
 
-[X] een release plan maken.
+- [x] een release plan maken.
 
