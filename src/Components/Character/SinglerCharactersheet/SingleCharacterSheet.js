@@ -14,7 +14,7 @@ function SinglePlayerCharacter({ data }){
 
     if (id >= 0 && id < CharacterSheets.length) {
         const specificCharacter = CharacterSheets[id];
-
+        console.log('specific Character', specificCharacter);
         return (
             <div>
             <h2>Player Name: {PlayerName}</h2>
@@ -33,9 +33,8 @@ function SinglePlayerCharacter({ data }){
 
 
 function PlayerCharacterstructure({MainCharacter}){
-    const [character, setCharacter] = useState({...MainCharacter, CharacterClass: getCharacterClassIdByName(MainCharacter.CharacterClass)})
+    const [character, setCharacter] = useState({...MainCharacter, characterClass: getCharacterClassIdByName(MainCharacter.characterClass)})
     const { id } = useParams();
-    const [BlurCharacter, setBlurCharacter] = useState(character)
 
 
     
@@ -43,10 +42,10 @@ function PlayerCharacterstructure({MainCharacter}){
     const handleBlur = () => {
         console.log('Full sheet', character );
         console.log('sheet number ', id);
-        setBlurCharacter(character);
+
         setTimeout(() => {
-            SetCharacterData(null, BlurCharacter, 1, id);
-        }, 1000);
+            SetCharacterData(null, character, 1, id);
+        }, 1500);
       };
 
    
@@ -54,19 +53,23 @@ function PlayerCharacterstructure({MainCharacter}){
         const { name, value } = event.target;
         
         if (name === 'characterName') {
-            setCharacter({ ...character, CharacterName: value });
+            setCharacter({ ...character, characterName: value });
         } else if(name === 'characterClass' )
         {
-            setCharacter({ ...character, CharacterClass: value });
+            setCharacter({ ...character, characterClass: value });
+        }
+        else if(name === 'characterLevel' )
+        {
+            setCharacter({ ...character, characterLevel: value });
         }
       };
 
     return(
         <div>
-            <h3> <input type="text" value={character.CharacterName} id="message" name="characterName" onChange={handleChange} onBlur={handleBlur} /> {BlurCharacter.CharacterName} </h3>
+            <h3> Character name: <input type="text" value={character.characterName} id="message" name="characterName" onChange={handleChange} onBlur={handleBlur} /></h3>
 
-            <CharacterClassSelect className="characterClass" classValue={character.CharacterClass} classOnChange={handleChange}/>
-            {MainCharacter.CharacterClass}
+                <p> character class: <CharacterClassSelect className="characterClass" classValue={character.characterClass} classOnChange={handleChange} classOnBlur={handleBlur}/></p>
+                <p> character Level: <input type="number" value={character.characterLevel} id="message" name="characterLevel" onChange={handleChange} onBlur={handleBlur} /></p>
         </div>
     )
 }

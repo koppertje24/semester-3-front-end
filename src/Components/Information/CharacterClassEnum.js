@@ -22,9 +22,9 @@ export const getCharacterClassIdByName = (className) => {
     return EnumCharacterClass[classKey]|| null;
   };
 
-export const CharacterClassSelect = ({className, classValue, classOnChange}) => {
+export const CharacterClassSelect = ({className, classValue, classOnChange, classOnBlur}) => {
     return(
-        <select id={className} name={className} value={classValue} onChange={classOnChange}>
+        <select id={className} name={className} value={classValue} onChange={classOnChange} onBlur={classOnBlur}>
             {Object.keys(EnumCharacterClass).map((key) => (
             <option key={EnumCharacterClass[key]} value={EnumCharacterClass[key]}>
                 {key}

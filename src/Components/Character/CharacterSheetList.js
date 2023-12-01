@@ -10,13 +10,13 @@ const PlayerCharacterTile = ({ id, character }) => {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        console.log(`Button clicked for character ${character.CharacterName} with ID ${id}`);
+        console.log(`Button clicked for character ${character.characterName} with ID ${id}`);
         navigate(`/${id}`);
     };
 
     return (
         <button className="character-tile" onClick={handleButtonClick}>
-            Name: {character.CharacterName} Class: {character.CharacterClass}
+            Name: {character.characterName} Class: {character.characterClass}
         </button>
     );
 };

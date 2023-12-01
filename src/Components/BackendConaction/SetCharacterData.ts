@@ -3,7 +3,7 @@ import { CharacterSheet } from '../DataStruckture/CharacterSheet';
 
 export async function SetCharacterData(event, sheet: CharacterSheet, AcountId, SheetId) {
 
-    console.log('character sheet:', sheet);
+    console.log('given character sheet', sheet);
 
     const apiUrl = SheetId ? `http://localhost:8080/players/put/${AcountId}/Character/${SheetId}` : `http://localhost:8080/players/post/${AcountId}/Character`;
 
