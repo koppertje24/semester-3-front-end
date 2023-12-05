@@ -1,5 +1,3 @@
-image: node:16.16.0
-
 stages:
     - build
     - test
