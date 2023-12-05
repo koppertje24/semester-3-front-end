@@ -1,11 +1,9 @@
-image: node:16.16.0
-
 stages:
     - build
     - test
     - deploy
 
-build:
+Front_build:
     stage: build
 
     before_script:
@@ -14,7 +12,7 @@ build:
     script:
         - npm run build
 
-test:
+Front_test:
     stage: test
 
     before_script:
@@ -23,7 +21,7 @@ test:
     script:
         - npm test
 
-deploy:
+Front_deploy:
     stage: deploy
 
     script:
