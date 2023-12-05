@@ -7,9 +7,9 @@
 
 - [ ] vraag docenten voor feedback op mijn leerevidance.
 
-- [ ] opschrijven over debuggen.
+- [x] opschrijven over debuggen.
 
-- [ ] repair the update/create, you broke it.
+- [x] repair the update/create, you broke it.
 
 
 ### LU1:
@@ -49,7 +49,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] release plan doc updaten + verbeteren.
 
-- [ ] branching strategy.
+- [x] branching strategy.
 
 - [ ] docker login.
 
