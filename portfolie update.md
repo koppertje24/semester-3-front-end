@@ -17,7 +17,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [x] leg meer uit hoe het orm word gebruikt word.
 
-- [ ] axios uitzoeken.
+- [x] axios uitzoeken.
 
 - [ ] firebase verdiepen.
 
@@ -25,7 +25,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] aangeven dat er crud in zit.
 
-- [ ] complete delete of character sheet.
+- [x] complete delete of character sheet.
 
 ### LU2:
 

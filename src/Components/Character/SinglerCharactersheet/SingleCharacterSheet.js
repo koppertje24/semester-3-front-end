@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
 import { CharacterClassSelect, getCharacterClassIdByName } from '../../Information/CharacterClassEnum';
 import SetCharacterData from '../../BackendConaction/SetCharacterData.ts';
-
+import DeleteCharacter from '../../BackendConaction/DeleteCharacter.js';
 
 
 
@@ -19,7 +19,7 @@ function SinglePlayerCharacter({ data }){
             <div>
             <h2>Player Name: {PlayerName}</h2>
             
-            <PlayerCharacterstructure MainCharacter={specificCharacter} />
+            <PlayerCharacterstructure MainCharacter={specificCharacter} UserId={data.id} />
 
             </div>
         );
@@ -32,10 +32,17 @@ function SinglePlayerCharacter({ data }){
 
 
 
-function PlayerCharacterstructure({MainCharacter}){
+function PlayerCharacterstructure({MainCharacter, UserId}){
     const [character, setCharacter] = useState({...MainCharacter, characterClass: getCharacterClassIdByName(MainCharacter.characterClass)})
     const { id } = useParams();
+    const navigate = useNavigate();
 
+    const deleteCharacterClick = () =>
+    {
+        const answer = DeleteCharacter(UserId, id);
+        console.log("Delete answer:", answer );
+        navigate('/');
+    }
 
     
 
@@ -67,7 +74,9 @@ function PlayerCharacterstructure({MainCharacter}){
     return(
         <div>
             <h3> Character name: <input type="text" value={character.characterName} id="message" name="characterName" onChange={handleChange} onBlur={handleBlur} /></h3>
-
+                <button onClick={deleteCharacterClick}>
+                    Delete
+                </button>
                 <p> character class: <CharacterClassSelect className="characterClass" classValue={character.characterClass} classOnChange={handleChange} classOnBlur={handleBlur}/></p>
                 <p> character Level: <input type="number" value={character.characterLevel} id="message" name="characterLevel" onChange={handleChange} onBlur={handleBlur} /></p>
         </div>

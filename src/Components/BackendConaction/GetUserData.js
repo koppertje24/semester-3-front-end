@@ -18,8 +18,8 @@ async function fetchPlayerById(id) {
             console.log('ability scores', abilityScores);
             characterArray[index] = new CharacterSheet({
                 id: element.id,
-                CharacterName: characterName, // Corrected property name
-                CharacterClass: characterClass, // Corrected property name
+                CharacterName: characterName, 
+                CharacterClass: characterClass, 
                 AbilityScores: new CharacterAbilityScores({
                     strengthSaveProficiency: abilityScores.strengthSaveProficiency,
                     strength: abilityScores.strength,
@@ -34,8 +34,8 @@ async function fetchPlayerById(id) {
                     charismaSaveProficiency: abilityScores.charismaSaveProficiency,
                     charisma: abilityScores.charisma,
                 }),
-                SkillProficiency: skillProficiency, // Corrected property name
-                CharacterLevel: characterLevel, // Corrected property name
+                SkillProficiency: skillProficiency,
+                CharacterLevel: characterLevel,
                 playerId: playerId,
             });
         });
