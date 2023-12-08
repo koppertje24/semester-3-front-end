@@ -23,7 +23,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [x] ORM neerzetten.
 
-- [ ] aangeven dat er crud in zit.
+- [x] aangeven dat er crud in zit.
 
 - [x] complete delete of character sheet.
 
@@ -73,6 +73,6 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 ### LU8:
 
-- [ ] front-end data strucktuur in portfolio. 
+- [x] front-end data strucktuur in portfolio. 
 
 - [ ] C4 diagram verbeteren.
