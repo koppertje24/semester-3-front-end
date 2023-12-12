@@ -39,7 +39,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] end to end tests.
 
-- [ ] front-end data strucktuur in portfolio 
+- [x] front-end data strucktuur in portfolio 
 
 ### LU3:
 
@@ -47,7 +47,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] een extra front/back-end toevoegen met een pipeline.
 
-- [ ] release plan doc updaten + verbeteren.
+- [x] release plan doc updaten + verbeteren.
 
 - [x] branching strategy.
 
