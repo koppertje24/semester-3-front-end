@@ -21,33 +21,41 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] firebase verdiepen.
 
-- [x] ORM neerzetten.
+- [x] ORM neerzetten.( portfolio )
 
 - [x] aangeven dat er crud in zit.
 
 - [x] complete delete of character sheet.
 
+- [ ] websocket toevoegen.
+
+- [ ] outzoeken hoe react async html update.
+
+- [ ] iets meer dan CRUD in de frond-end.
+
 ### LU2:
 
 - [ ] voeg steekworden toe aan project.
 
-- [ ] Schrijf een testplan. beetje verstand over hoe en een cenario.
+- [x] Schrijf een testplan. beetje verstand over hoe en een cenario.
 
 - [ ] meer dingen hebben te maken met software quality.
 
-- [ ] Sonar cload tool
+- [ ] Sonar cload tool.
 
 - [ ] end to end tests.
 
-- [ ] front-end data strucktuur in portfolio 
+- [ ] front-end data strucktuur in portfolio.
 
 ### LU3:
+
+- [ ] agile in project.
 
 ### LU4:
 
 - [ ] een extra front/back-end toevoegen met een pipeline.
 
-- [ ] release plan doc updaten + verbeteren.
+- [x] release plan doc updaten + verbeteren.
 
 - [x] branching strategy.
 
@@ -59,17 +67,19 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 ### LU5:
 
-- [ ] schrijf een (klein) cultuur bestand
+- [ ] schrijf een (klein) cultuur bestand.
 
-- [ ] opschrijven over de 2 contracten van prins heerlijk   
+- [x] opschrijven over de 2 contracten van prins heerlijk.
 
 ### LU6:
 
 - [ ] een versie van uitleg over de aplicatie.
 
+- [ ] C4 diagram verbeteren.
+
 ### LU7:
 
-- [ ] C4 diagram verbeteren
+- [ ] C4 diagram verbeteren.
 
 ### LU8:
 
