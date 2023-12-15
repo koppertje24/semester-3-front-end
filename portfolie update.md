@@ -45,7 +45,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] end to end tests.
 
-- [ ] front-end data strucktuur in portfolio.
+- [x] front-end data strucktuur in portfolio 
 
 ### LU3:
 
