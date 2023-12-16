@@ -1,51 +1,60 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import SinglePlayerCharacter from './SingleCharacterSheet';
+const React = require('react');
+const { render, screen } = require('@testing-library/react');
+const { MemoryRouter, Routes, Route, useLocation  } = require('react-router-dom');
+const { createMemoryHistory } = require('history');
+const { SinglePlayerCharacter } = require('./SingleCharacterSheet.js');
 
-describe('SinglePlayerCharacter Component', () => {
-  it('renders character details when ID is in range', () => {
-    const data = {
-      playerCharacters: [
-        { characterName: 'Character 1', characterClass: 'Class 1' },
-        { characterName: 'Character 2', characterClass: 'Class 2' },
+
+describe('SinglePlayerCharacter', () => {
+  it('renders the character data for a valid id', () => {
+    const mockData = {
+      CharacterSheets: [
+        { id: 1, characterName: 'Character 1', characterLevel: 1 },
+        { id: 2, characterName: 'Character 2', characterLevel: 2 },
       ],
-      playerName: 'John Doe',
+      PlayerName: 'Test Player',
     };
 
+    const history = createMemoryHistory({
+      initialEntries: ['/character/1'],
+    });
+
     render(
-      <MemoryRouter initialEntries={['/characters/0']}>
+      <MemoryRouter history={history} initialEntries={['/character/1']} >
         <Routes>
-        <Route path="/characters/:id" element={<SinglePlayerCharacter data={data} />} />
+          <Route path="/character/:id">
+            <Route path="/character/:id" element={<SinglePlayerCharacter data={mockData} />} />
+          </Route>
         </Routes>
       </MemoryRouter>
     );
 
-    // Check if the character details are displayed when ID is in range
-    expect(screen.getByText('Character Sheet for ID: 0')).toBeInTheDocument();
-    expect(screen.getByText('Player Name: John Doe')).toBeInTheDocument();
-    expect(screen.getByText('Character 1')).toBeInTheDocument();
-    expect(screen.getByText('Class 1')).toBeInTheDocument();
+    expect(screen.getByText('Player Name: Test Player')).toBeInTheDocument();
+    expect(screen.getByDisplayValue('Character 2')).toBeInTheDocument();
   });
 
-  it('renders "Id out of range" when ID is out of range', () => {
-    const data = {
-      playerCharacters: [
-        { characterName: 'Character 1', characterClass: 'Class 1' },
-        { characterName: 'Character 2', characterClass: 'Class 2' },
-      ],
-      playerName: 'John Doe',
+  it('navigates to the root route for an invalid id', () => {
+    const mockData = {
+      CharacterSheets: [],
+      PlayerName: 'Test Player',
     };
 
+    const history = createMemoryHistory({
+      initialEntries: ['/character/1'],
+    });
+
     render(
-      <MemoryRouter initialEntries={['/characters/3']}>
+      <MemoryRouter history={history}>
         <Routes>
-        <Route path="/characters/:id" element={<SinglePlayerCharacter data={data} />} />
+        <Route path="/">
+          <Route path="/" element={<p> you should </p>} />
+          <Route path="/character/:id" element={<SinglePlayerCharacter data={mockData} />} />
+        </Route>
         </Routes>
       </MemoryRouter>
     );
 
-    // Check if "Id out of range" message is displayed
-    expect(screen.getByText('Id out of range')).toBeInTheDocument();
+    const location = useLocation();
+    expect(location.pathname).toBe('/');
   });
 });

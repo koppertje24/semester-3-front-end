@@ -16,10 +16,16 @@ export const EnumCharacterClass = {
 };
 
 export const getCharacterClassIdByName = (className) => {
+
+    if(className === undefined)
+    {
+        return EnumCharacterClass[0];
+    }
+
     const classKey = Object.keys(EnumCharacterClass).find(
         (key) => key.toLowerCase() === className.toLowerCase()
       );
-    return EnumCharacterClass[classKey]|| null;
+    return EnumCharacterClass[classKey]|| EnumCharacterClass[0];
   };
 
 export const CharacterClassSelect = ({className, classValue, classOnChange, classOnBlur}) => {

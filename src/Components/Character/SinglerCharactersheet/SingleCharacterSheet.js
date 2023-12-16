@@ -7,7 +7,7 @@ import DeleteCharacter from '../../BackendConaction/DeleteCharacter.js';
 
 
 
-function SinglePlayerCharacter({ data }){
+export function SinglePlayerCharacter({ data }){
     const navigate = useNavigate();
     const { id } = useParams();
     const { CharacterSheets, PlayerName } = data;
@@ -16,17 +16,14 @@ function SinglePlayerCharacter({ data }){
         const specificCharacter = CharacterSheets[id];
         console.log('specific Character', specificCharacter);
         return (
-            <div>
+        <div>
             <h2>Player Name: {PlayerName}</h2>
-            
             <PlayerCharacterstructure MainCharacter={specificCharacter} UserId={data.id} />
-
-            </div>
+        </div>
         );
-    }
-    else{
+    } else {
         navigate('/');
-        return(<p>Id out of range</p>);
+        return <p>Id out of range</p>;
     }
 };
 
