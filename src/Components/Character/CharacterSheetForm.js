@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { CharacterClassSelect } from "../Information/CharacterClassEnum";
+import { CharacterClassSelect } from "../Information/CharacterClassEnum.js";
 
-import { CharacterSheet } from '../DataStruckture/CharacterSheet';
+import { CharacterSheet } from '../DataStruckture/CharacterSheet.js';
 import { SetCharacterData } from '../BackendConaction/SetCharacterData.ts';
 
 const CharacterSheetForm = () => {

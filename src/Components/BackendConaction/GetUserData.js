@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { CharacterAbilityScores }  from '../DataStruckture/CharacterAbilityScores'
-import { CharacterSheet }  from '../DataStruckture/CharacterSheet'
-import { DndPlayerinfo }  from '../DataStruckture/Dndplayerinfo'
+import { CharacterAbilityScores }  from '../DataStruckture/CharacterAbilityScores.js'
+import { CharacterSheet }  from '../DataStruckture/CharacterSheet.js'
+import { DndPlayerinfo }  from '../DataStruckture/Dndplayerinfo.js'
 
 async function fetchPlayerById(id) {
     try {

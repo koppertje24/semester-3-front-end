@@ -1,4 +1,4 @@
-import { CharacterAbilityScores } from './CharacterAbilityScores'
+import { CharacterAbilityScores } from './CharacterAbilityScores.js'
 
 export class CharacterSheet {
     constructor(options)

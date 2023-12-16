@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
-import { CharacterClassSelect, getCharacterClassIdByName } from '../../Information/CharacterClassEnum';
+import { CharacterClassSelect, getCharacterClassIdByName } from '../../Information/CharacterClassEnum.js';
 import SetCharacterData from '../../BackendConaction/SetCharacterData.ts';
 import DeleteCharacter from '../../BackendConaction/DeleteCharacter.js';
 
