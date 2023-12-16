@@ -1,31 +1,29 @@
+cache:
+  paths:
+    - node_modules/
+
 stages:
-    - build
-    - test
-    - deploy
+  - build
+  - test
+  - deploy
 
 Front_build:
-    stage: build
-
-    before_script:
-        - npm install
-
-    script:
-        - npm run build
+  stage: build
+  before_script:
+    - npm install
+  script:
+    - npm run build
 
 Front_test:
-    stage: test
-
-    before_script:
-        - npm install
-
-    script:
-        - npm test
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm test
 
 Front_deploy:
-    stage: deploy
-
-    script:
-        - echo "deploy script here"
-
-    only:
-        - master
+  stage: deploy
+  script:
+    - echo "deploy script here"
+  only:
+    - main
