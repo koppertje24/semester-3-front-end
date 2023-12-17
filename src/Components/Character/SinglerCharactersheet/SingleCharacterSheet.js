@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { CharacterClassSelect, getCharacterClassIdByName } from '../../Information/CharacterClassEnum.js';
 import SetCharacterData from '../../BackendConaction/SetCharacterData.ts';
 import DeleteCharacter from '../../BackendConaction/DeleteCharacter.js';
+import ListofAtributes from './Charactercomponents/ListofAtributes.js';
 
 
 
@@ -76,6 +77,7 @@ function PlayerCharacterstructure({MainCharacter, UserId}){
                 </button>
                 <p> character class: <CharacterClassSelect className="characterClass" classValue={character.characterClass} classOnChange={handleChange} classOnBlur={handleBlur}/></p>
                 <p> character Level: <input type="number" value={character.characterLevel} id="message" name="characterLevel" onChange={handleChange} onBlur={handleBlur} /></p>
+                <ListofAtributes CharacterAbilityScores={character.abilityScores} />
         </div>
     )
 }

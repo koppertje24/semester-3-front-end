@@ -59,7 +59,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [x] branching strategy.
 
-- [ ] docker login.
+- [x] docker login.
 
 - [ ] ruiken aan docker compose.
 
