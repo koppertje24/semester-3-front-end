@@ -3,14 +3,15 @@ const { render, screen } = require('@testing-library/react');
 const { MemoryRouter, Routes, Route, useLocation  } = require('react-router-dom');
 const { createMemoryHistory } = require('history');
 const { SinglePlayerCharacter } = require('./SingleCharacterSheet.js');
+const { CharacterSheet } = require('../../DataStruckture/CharacterSheet.js');
 
 
 describe('SinglePlayerCharacter', () => {
   it('renders the character data for a valid id', () => {
     const mockData = {
       CharacterSheets: [
-        { id: 1, characterName: 'Character 1', characterLevel: 1 },
-        { id: 2, characterName: 'Character 2', characterLevel: 2 },
+        new CharacterSheet({id: 1, characterName: 'Character 1', characterLevel: 1, characterName:'Wizard'}),
+        new CharacterSheet({id: 2, characterName: 'Character 2', characterLevel: 2, characterName:'Wizard'}),
       ],
       PlayerName: 'Test Player',
     };
