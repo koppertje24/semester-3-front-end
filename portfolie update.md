@@ -69,6 +69,8 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] schrijf een (klein) cultuur bestand.
 
+- [ ] maak de eerste twe vragen voor jezelf die patric de beer heeft doorgestuurd op teams
+
 - [x] opschrijven over de 2 contracten van prins heerlijk.
 
 ### LU6:
