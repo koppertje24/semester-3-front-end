@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export const EnumCharacterClass = {
     NoneSelecter: 0,
     Barbarian: 1,
@@ -21,11 +23,19 @@ export const getCharacterClassIdByName = (className) => {
     {
         return EnumCharacterClass[0];
     }
-
-    const classKey = Object.keys(EnumCharacterClass).find(
-        (key) => key.toLowerCase() === className.toLowerCase()
-      );
-    return EnumCharacterClass[classKey]|| EnumCharacterClass[0];
+    let classKey = 0;
+    if(typeof className === 'number')
+    {
+        classKey = className;
+    }
+    else
+    {
+        classKey = Object.keys(EnumCharacterClass).find(
+            (key) => key.toLowerCase() === className.toLowerCase()
+          );
+    }
+    
+    return EnumCharacterClass[classKey] || EnumCharacterClass[0];
   };
 
 export const CharacterClassSelect = ({className, classValue, classOnChange, classOnBlur}) => {

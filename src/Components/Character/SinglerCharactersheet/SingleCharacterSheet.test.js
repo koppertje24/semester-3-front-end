@@ -10,8 +10,8 @@ describe('SinglePlayerCharacter', () => {
   it('renders the character data for a valid id', () => {
     const mockData = {
       CharacterSheets: [
-        new CharacterSheet({id: 1, characterName: 'Character 1', characterLevel: 1, characterName:'Wizard'}),
-        new CharacterSheet({id: 2, characterName: 'Character 2', characterLevel: 2, characterName:'Wizard'}),
+        new CharacterSheet({id: 1, CharacterName: 'Character 1', characterLevel: 1, characterClass:'Wizard'}),
+        new CharacterSheet({id: 2, CharacterName: 'Character 2', characterLevel: 2, characterClass:'Wizard'}),
       ],
       PlayerName: 'Test Player',
     };
