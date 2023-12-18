@@ -31,7 +31,7 @@ describe('SinglePlayerCharacter', () => {
     );
 
     expect(screen.getByText('Player Name: Test Player')).toBeInTheDocument();
-    expect(screen.getByDisplayValue('Character 2')).toBeInTheDocument();
+    expect(screen.getByDisplayValue(mockData.CharacterSheets[1].characterName)).toBeInTheDocument();
   });
 
   it('navigates to the root route for an invalid id', () => {

@@ -27,7 +27,11 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [x] complete delete of character sheet.
 
-- [ ] websocket toevoegen.
+- [x] websocket toevoegen.
+
+- [ ] websocket verbeteren.
+
+- [ ] websocket schijven.
 
 - [ ] outzoeken hoe react async html update.
 
@@ -38,6 +42,10 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 - [ ] voeg steekworden toe aan project.
 
 - [x] Schrijf een testplan. beetje verstand over hoe en een cenario.
+
+- [ ] voeg toe aan test plan welke dingen je waar wilt testen.
+
+- [ ] sidepress end-to-end test.
 
 - [ ] meer dingen hebben te maken met software quality.
 
@@ -69,7 +77,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] schrijf een (klein) cultuur bestand.
 
-- [ ] maak de eerste twe vragen voor jezelf die patric de beer heeft doorgestuurd op teams
+- [ ] maak de eerste twe vragen voor jezelf die patric de beer heeft doorgestuurd op teams.
 
 - [x] opschrijven over de 2 contracten van prins heerlijk.
 
@@ -77,14 +85,28 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] een versie van uitleg over de aplicatie.
 
-- [ ] C4 diagram verbeteren.
+- [x] C4 diagram verbeteren.
+
+- [ ] C4 diagram laag 2 bestat out de server laag.
+
+- [ ] C4 diagram laag 3 bestat out functinaliteiden.
 
 ### LU7:
 
-- [ ] C4 diagram verbeteren.
+- [x] C4 diagram verbeteren.
+
+- [ ] C4 diagram laag 2 bestat out de server laag.
+
+- [ ] C4 diagram laag 3 bestat out functinaliteiden.
 
 ### LU8:
 
 - [x] front-end data strucktuur in portfolio. 
 
-- [ ] C4 diagram verbeteren.
+- [x] C4 diagram verbeteren.
+
+- [ ] c4 diagram updaten in portfolio
+
+- [ ] C4 diagram laag 2 bestat out de server laag.
+
+- [ ] C4 diagram laag 3 bestat out functinaliteiden.
