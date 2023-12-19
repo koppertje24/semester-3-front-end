@@ -2,12 +2,12 @@ cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
+    - .npm/
 
 stages:
   - build
   - test
   - deploy
-  - e2e test
 
 Front_build:
   stage: build
@@ -16,12 +16,23 @@ Front_build:
   script:
     - npm run build
 
-Front_test:
+
+Front_Cypress_test:
+  image: cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1
+  stage: test
+  before_script:
+    - npm ci
+    - npm start &
+  script:
+    - npx cypress run --browser firefox
+
+Front_npm_test:
   stage: test
   before_script:
     - npm install
   script:
     - npm test
+  when: manual
 
 Front_deploy:
   stage: deploy
@@ -29,12 +40,4 @@ Front_deploy:
     - echo "deploy script here"
   only:
     - main
-
-e2e_test:
-  stage: e2e test
-  script:
-    - echo "deploy Do end to end test here"
-  only:
-    - main
-  when: manual
 
