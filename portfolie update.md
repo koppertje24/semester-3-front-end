@@ -61,7 +61,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 ### LU4:
 
-- [ ] een extra front/back-end toevoegen met een pipeline.
+- [x] een extra front/back-end toevoegen met een pipeline.
 
 - [x] release plan doc updaten + verbeteren.
 
