@@ -49,7 +49,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] meer dingen hebben te maken met software quality.
 
-- [ ] Sonar cload tool.
+- [x] Sonar cload tool.
 
 - [ ] end to end tests.
 
@@ -75,9 +75,11 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 ### LU5:
 
-- [ ] schrijf een (klein) cultuur bestand.
+- [x] schrijf een (klein) cultuur bestand.
 
 - [ ] maak de eerste twe vragen voor jezelf die patric de beer heeft doorgestuurd op teams.
+
+https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/edit
 
 - [x] opschrijven over de 2 contracten van prins heerlijk.
 

@@ -4,4 +4,6 @@
 
 - `npm test` runs the standard node tests
 
+- `npm install cypress --save-dev` before starting Cypress runn this command
+
 - `npx cypress open` starts Cypress for e2e tests and better tests.
