@@ -11,6 +11,8 @@
 
 - [x] repair the update/create, you broke it.
 
+- [ ] schrijf een onderzoeks raport.
+
 
 ### LU1:
 schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
