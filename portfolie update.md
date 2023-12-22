@@ -97,7 +97,7 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] C4 diagram laag 2 bestat out de server laag.
 
-- [ ] C4 diagram laag 3 bestat out functinaliteiden.
+- [x] C4 diagram laag 3 bestat out functinaliteiden.
 
 ### LU7:
 
@@ -105,7 +105,7 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] C4 diagram laag 2 bestat out de server laag.
 
-- [ ] C4 diagram laag 3 bestat out functinaliteiden.
+- [x] C4 diagram laag 3 bestat out functinaliteiden.
 
 ### LU8:
 
@@ -113,8 +113,8 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] C4 diagram verbeteren.
 
-- [ ] c4 diagram updaten in portfolio.
+- [x] c4 diagram updaten in portfolio.
 
 - [x] C4 diagram laag 2 bestat out de server laag.
 
-- [ ] C4 diagram laag 3 bestat out functinaliteiden.
+- [x] C4 diagram laag 3 bestat out functinaliteiden.
