@@ -47,13 +47,13 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] voeg toe aan test plan welke dingen je waar wilt testen.
 
-- [ ] sidepress end-to-end test.
+- [x] cypress end-to-end test.
 
 - [ ] meer dingen hebben te maken met software quality.
 
 - [x] Sonar cload tool.
 
-- [ ] end to end tests.
+- [ ] end to end tests afronden.
 
 - [x] front-end data strucktuur in portfolio 
 
@@ -73,6 +73,8 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] ruiken aan docker compose.
 
+- [ ] maak docker images van front-end en back-end.
+
 - [x] een release plan maken.
 
 ### LU5:
@@ -89,9 +91,11 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [ ] een versie van uitleg over de aplicatie.
 
+- [ ] steekholders goedgeuring toevoegen.
+
 - [x] C4 diagram verbeteren.
 
-- [ ] C4 diagram laag 2 bestat out de server laag.
+- [x] C4 diagram laag 2 bestat out de server laag.
 
 - [ ] C4 diagram laag 3 bestat out functinaliteiden.
 
@@ -99,7 +103,7 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] C4 diagram verbeteren.
 
-- [ ] C4 diagram laag 2 bestat out de server laag.
+- [x] C4 diagram laag 2 bestat out de server laag.
 
 - [ ] C4 diagram laag 3 bestat out functinaliteiden.
 
@@ -109,8 +113,8 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] C4 diagram verbeteren.
 
-- [ ] c4 diagram updaten in portfolio
+- [ ] c4 diagram updaten in portfolio.
 
-- [ ] C4 diagram laag 2 bestat out de server laag.
+- [x] C4 diagram laag 2 bestat out de server laag.
 
 - [ ] C4 diagram laag 3 bestat out functinaliteiden.

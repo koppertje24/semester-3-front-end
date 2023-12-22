@@ -71,12 +71,12 @@ function PlayerCharacterstructure({MainCharacter, UserId}){
 
     return(
         <div>
-            <h3> Character name: <input type="text" value={character.characterName} id="message" name="characterName" onChange={handleChange} onBlur={handleBlur} /></h3>
+            <h3> Character name: <input type="text" value={character.characterName} id="characterName" name="characterName" onChange={handleChange} onBlur={handleBlur} /></h3>
                 <button onClick={deleteCharacterClick}>
                     Delete
                 </button>
                 <p> character class: <CharacterClassSelect className="characterClass" classValue={character.characterClass} classOnChange={handleChange} classOnBlur={handleBlur}/></p>
-                <p> character Level: <input type="number" value={character.characterLevel} id="message" name="characterLevel" onChange={handleChange} onBlur={handleBlur} /></p>
+                <p> character Level: <input type="number" value={character.characterLevel} id="characterLevel" name="characterLevel" onChange={handleChange} onBlur={handleBlur} /></p>
                 <ListofAtributes CharacterAbilityScores={character.abilityScores} />
         </div>
     )
