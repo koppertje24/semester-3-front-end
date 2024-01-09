@@ -13,9 +13,14 @@
 
 - [ ] schrijf een onderzoeks raport.
 
+- [ ] leeruitkomten uitleg van canvas toevoegen.
+
 
 ### LU1:
-schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
+
+- [ ] schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor alles.
+
+- [ ] Meer code snipits laten zien in protfolio.
 
 - [x] leg meer uit hoe het orm word gebruikt word.
 
@@ -43,9 +48,13 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [ ] voeg steekworden toe aan project.
 
+- [ ] voeg to aan portfolio dat je cypress gebruikt.
+
+- [ ] code snippets van de testen erin stoppen.
+
 - [x] Schrijf een testplan. beetje verstand over hoe en een cenario.
 
-- [ ] voeg toe aan test plan welke dingen je waar wilt testen.
+- [x] voeg toe aan test plan welke dingen je waar wilt testen.
 
 - [x] cypress end-to-end test.
 
@@ -81,7 +90,7 @@ schijf meer over wat de verschillen zijn tussen twee dingen en doe dit meer voor
 
 - [x] schrijf een (klein) cultuur bestand.
 
-- [ ] maak de eerste twe vragen voor jezelf die patric de beer heeft doorgestuurd op teams.
+- [ ] maak de eerste twee vragen voor jezelf die patric de beer heeft doorgestuurd op teams.
 
 https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/edit
 
@@ -101,6 +110,8 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 ### LU7:
 
+- [ ] verieferen of het busunis proces goed is.
+
 - [x] C4 diagram verbeteren.
 
 - [x] C4 diagram laag 2 bestat out de server laag.
@@ -108,6 +119,12 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 - [x] C4 diagram laag 3 bestat out functinaliteiden.
 
 ### LU8:
+
+- [ ] stand-up document tovoegen.
+
+- [ ] planning (dit document) in portfolio
+
+- [ ] aantonen die well lukken en dingen die niet lukken.
 
 - [x] front-end data strucktuur in portfolio. 
 
