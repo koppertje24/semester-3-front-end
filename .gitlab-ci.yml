@@ -25,6 +25,7 @@ Front_Cypress_test:
     - npm start &
   script:
     - npx cypress run --browser firefox
+  when: manual
 
 Front_npm_test:
   stage: test
@@ -32,7 +33,7 @@ Front_npm_test:
     - npm install
   script:
     - npm test
-  when: manual
+  
 
 Front_deploy:
   stage: deploy
