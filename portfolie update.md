@@ -11,9 +11,9 @@
 
 - [x] repair the update/create, you broke it.
 
-- [ ] schrijf een onderzoeks raport.
+- [x] schrijf een onderzoeks raport.
 
-- [ ] leeruitkomten uitleg van canvas toevoegen.
+- [x] leeruitkomten uitleg van canvas toevoegen.
 
 
 ### LU1:
@@ -48,9 +48,9 @@
 
 - [ ] voeg steekworden toe aan project.
 
-- [ ] voeg to aan portfolio dat je cypress gebruikt.
+- [x] voeg to aan portfolio dat je cypress gebruikt.
 
-- [ ] code snippets van de testen erin stoppen.
+- [x] code snippets van de testen erin stoppen.
 
 - [x] Schrijf een testplan. beetje verstand over hoe en een cenario.
 
@@ -62,7 +62,7 @@
 
 - [x] Sonar cload tool.
 
-- [ ] end to end tests afronden.
+- [x] end to end tests afronden.
 
 - [x] front-end data strucktuur in portfolio 
 
@@ -90,7 +90,7 @@
 
 - [x] schrijf een (klein) cultuur bestand.
 
-- [ ] maak de eerste twee vragen voor jezelf die patric de beer heeft doorgestuurd op teams.
+- [x] maak de eerste twee vragen voor jezelf die patric de beer heeft doorgestuurd op teams.
 
 https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/edit
 
@@ -120,11 +120,11 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 ### LU8:
 
-- [ ] stand-up document tovoegen.
+- [x] stand-up document tovoegen.
 
-- [ ] planning (dit document) in portfolio
+- [x] planning (dit document) in portfolio
 
-- [ ] aantonen die well lukken en dingen die niet lukken.
+- [ ] aantonen dingen die well lukken en dingen die niet lukken.
 
 - [x] front-end data strucktuur in portfolio. 
 
