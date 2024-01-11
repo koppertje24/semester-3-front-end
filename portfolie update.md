@@ -80,9 +80,9 @@
 
 - [x] docker login.
 
-- [ ] ruiken aan docker compose.
+- [x] ruiken aan docker compose.
 
-- [ ] maak docker images van front-end en back-end.
+- [x] maak docker images van front-end en back-end.
 
 - [x] een release plan maken.
 
