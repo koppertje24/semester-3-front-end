@@ -14,6 +14,7 @@ Front_build:
   before_script:
     - npm install
   script:
+    - set CI=false
     - npm run build
 
 
@@ -32,6 +33,7 @@ Front_npm_test:
   before_script:
     - npm install
   script:
+    - set CI=false
     - npm test
   
 
