@@ -1,12 +1,9 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
-import { CharacterClassSelect, getCharacterClassIdByName } from '../../Information/CharacterClassEnum.js';
+import { EnumCharacterClass, getCharacterClassIdByName, CharacterClassSelect } from '../../Information/CharacterClassEnum.mjs';
 import SetCharacterData from '../../BackendConaction/SetCharacterData.ts';
 import DeleteCharacter from '../../BackendConaction/DeleteCharacter.js';
 import ListofAtributes from './Charactercomponents/ListofAtributes.js';
-
-
-
 
 export function SinglePlayerCharacter({ data }){
     const navigate = useNavigate();

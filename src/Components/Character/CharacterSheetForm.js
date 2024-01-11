@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { CharacterClassSelect } from "../Information/CharacterClassEnum.js";
+import { EnumCharacterClass, getCharacterClassIdByName, CharacterClassSelect } from '../Information/CharacterClassEnum.mjs';
 
 import { CharacterSheet } from '../DataStruckture/CharacterSheet.js';
 import { SetCharacterData } from '../BackendConaction/SetCharacterData.ts';
