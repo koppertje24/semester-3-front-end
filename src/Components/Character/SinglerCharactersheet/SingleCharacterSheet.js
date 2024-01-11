@@ -28,6 +28,7 @@ export function SinglePlayerCharacter({ data }){
 
 
 function PlayerCharacterstructure({MainCharacter, UserId}){
+    getCharacterClassIdByName(EnumCharacterClass.Artificer);
     const [character, setCharacter] = useState({...MainCharacter, characterClass: getCharacterClassIdByName(MainCharacter.characterClass)})
     const { id } = useParams();
     const navigate = useNavigate();

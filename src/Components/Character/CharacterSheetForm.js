@@ -12,6 +12,8 @@ const CharacterSheetForm = () => {
     const [characterClass, setcharacterClass] = useState(0);
     const navigate = useNavigate();
 
+    getCharacterClassIdByName(EnumCharacterClass.Artificer);
+
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         if (name === 'characterName') {
