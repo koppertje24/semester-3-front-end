@@ -28,21 +28,23 @@
 
 - [ ] firebase verdiepen.
 
-- [x] ORM neerzetten.( portfolio )
+- [x] ORM neerzetten. ( portfolio )
 
 - [x] aangeven dat er crud in zit.
 
 - [x] complete delete of character sheet.
 
-- [x] websocket toevoegen.
+- [ ] websocket toevoegen aan portfolio. !! 
+
+- [ ] UX Why are the stats in boxes? !!
 
 - [ ] websocket verbeteren.
 
-- [ ] websocket schijven.
+- [x] websocket schijven.
 
-- [ ] outzoeken hoe react async html update.
+- [ ] outzoeken hoe react async html update. !?
 
-- [ ] iets meer dan CRUD in de frond-end.
+- [x] iets meer dan CRUD in de frond-end.
 
 ### LU2:
 
@@ -66,11 +68,15 @@
 
 - [x] front-end data strucktuur in portfolio 
 
+- [ ] cypress delete test response. !!
+
+- [ ] end-to-end test write down explenation !!
+ 
 ### LU3:
 
 - [ ] agile in project.
 
-### LU4:
+### LU4: (Pro : Sander)
 
 - [x] een extra front/back-end toevoegen met een pipeline.
 
@@ -96,11 +102,11 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] opschrijven over de 2 contracten van prins heerlijk.
 
-### LU6:
+### LU6: (Pro : Sander)
 
-- [ ] een versie van uitleg over de aplicatie.
+- [x] een versie van uitleg over de aplicatie. 
 
-- [ ] steekholders goedgeuring toevoegen.
+- [ ] steekholders goedgeuring toevoegen. (met demo) !!
 
 - [x] C4 diagram verbeteren.
 
@@ -125,6 +131,8 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 - [x] planning (dit document) in portfolio
 
 - [ ] aantonen dingen die well lukken en dingen die niet lukken.
+
+- [ ] neerzetten hoe de verbinding ging door het project heen tussen kees en ons.
 
 - [x] front-end data strucktuur in portfolio. 
 
