@@ -72,7 +72,7 @@
 
 - [ ] end-to-end test write down explenation !!
  
-### LU3:
+### LU3: (Pro : Patrick)
 
 - [ ] agile in project.
 
@@ -92,7 +92,7 @@
 
 - [x] een release plan maken.
 
-### LU5:
+### LU5: (Pro : Patrick)
 
 - [x] schrijf een (klein) cultuur bestand.
 
@@ -114,7 +114,7 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [x] C4 diagram laag 3 bestat out functinaliteiden.
 
-### LU7:
+### LU7: (Pro : Patrick)
 
 - [ ] verieferen of het busunis proces goed is.
 
@@ -132,7 +132,9 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [ ] aantonen dingen die well lukken en dingen die niet lukken.
 
-- [ ] neerzetten hoe de verbinding ging door het project heen tussen kees en ons.
+- [ ] neerzetten hoe de verbinding ging door het project heen tussen kees en ons. !!
+
+- [ ] beter neerzetten wat ik beter ga doen de volgende keer. ( is onduidelijk ) !!
 
 - [x] front-end data strucktuur in portfolio. 
 
