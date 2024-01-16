@@ -11,6 +11,8 @@ describe('Visiting test', () => {
 
   it('Character Creation', () => {
 
+    cy.intercept('POST', '*').as('postRequest')
+
     cy.contains('Create Sheet').click()
 
     cy.url().should('include', '/CreateSheet')
@@ -22,10 +24,15 @@ describe('Visiting test', () => {
     cy.get('#characterClass').should('have.value', Class1);
 
     cy.contains('Save').click()
+    cy.wait('@postRequest').then((interception) => {
+      expect(interception.response.statusCode).to.equal(200)
+      })
   }) 
 
   it('Character View', () => {
     
+    cy.intercept('PUT', '*').as('putRequest')
+
     cy.contains(Name1).click()
 
     cy.get('#characterName').clear().type(Name2);
@@ -34,7 +41,9 @@ describe('Visiting test', () => {
 
     cy.contains('1D4').click();
 
-    cy.wait(3000);
+    cy.wait('@putRequest').then((interception) => {
+      expect(interception.response.statusCode).to.equal(200)
+      })
 
     cy.visit('http://localhost:3000/')
 
@@ -50,7 +59,9 @@ describe('Visiting test', () => {
 
     cy.contains('1D4').click();
 
-    cy.wait(3000);
+    cy.wait('@putRequest').then((interception) => {
+      expect(interception.response.statusCode).to.equal(200)
+      })
 
     cy.visit('http://localhost:3000/')
 
@@ -63,10 +74,14 @@ describe('Visiting test', () => {
   }) 
 
   it('Character Delete', () => {
+    cy.intercept('DELETE', '*').as('deleteRequest')
 
     cy.contains(Name1).click()
 
     cy.contains('Delete').click()
-  }) 
 
+    cy.wait('@deleteRequest').then((interception) => {
+      expect(interception.response.statusCode).to.equal(200)
+      })
+    })
 })

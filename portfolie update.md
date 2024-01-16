@@ -34,7 +34,7 @@
 
 - [x] complete delete of character sheet.
 
-- [ ] websocket toevoegen aan portfolio. !! 
+- [x] websocket toevoegen aan portfolio. !! 
 
 - [ ] UX Why are the stats in boxes? !!
 
@@ -68,9 +68,9 @@
 
 - [x] front-end data strucktuur in portfolio 
 
-- [ ] cypress delete test response. !!
+- [x] cypress delete test response. !!
 
-- [ ] end-to-end test write down explenation !!
+- [x] end-to-end test write down explenation !!
  
 ### LU3: (Pro : Patrick)
 
@@ -132,9 +132,9 @@ https://docs.google.com/document/d/1IOmjtChMW_MY9TX_hnV1j7Indhadk25h9YrdPG_352o/
 
 - [ ] aantonen dingen die well lukken en dingen die niet lukken.
 
-- [ ] neerzetten hoe de verbinding ging door het project heen tussen kees en ons. !!
+- [x] neerzetten hoe de verbinding ging door het project heen tussen kees en ons. !!
 
-- [ ] beter neerzetten wat ik beter ga doen de volgende keer. ( is onduidelijk ) !!
+- [x] beter neerzetten wat ik beter ga doen de volgende keer. ( is onduidelijk ) !!
 
 - [x] front-end data strucktuur in portfolio. 
 
